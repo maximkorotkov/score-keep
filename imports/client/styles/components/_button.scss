@@ -1,0 +1,27 @@
+.button {
+    background: transparent;
+    border: 1px solid #555555;
+    color: #555555;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 1; // centers text inside buttons
+    margin-left: 1.3rem;
+    outline: none;
+    padding: 1.3rem;
+    transition: background .2s ease, transform .2s ease; // animations for color shift and button moving towards user
+
+    &:hover, &:focus {
+        background: #e8e8e8;
+    }
+
+    &:active {
+        background: #cccccc;
+        transform: scale(1.1); // button moves closer to the user
+    }
+}
+
+.button--round {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
